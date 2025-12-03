@@ -27,3 +27,13 @@ create table if not exists accounts(
     constraint fk_customer foreign key (customerId) references Customers(customer_id) on delete cascade on update cascade,
     constraint fk_advisor foreign key (advisorId) references advisors(advisor_id) on delete cascade on update cascade
 );
+
+create table if not exists Transactions (
+    transaction_id int primary key,
+    amount decimal(12,2),
+    transaction_type varchar(20),
+    constraint ck_transaction_type check(transaction_type in ('debit','credit')),
+    transaction_date date ,
+    accountId int ,
+    constraint fk_account foreign key (accountId) references accounts(account_id) on delete cascade on update cascade
+);
