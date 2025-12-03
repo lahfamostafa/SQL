@@ -15,3 +15,12 @@ select * from accounts
 
 /*      6       */
 select account_number from accounts
+
+/*      7       */
+select *from Transactions 
+
+/*      8       */
+select * from accounts where balance > 10000
+
+/*      9       */
+select * from accounts where balance <= 0
