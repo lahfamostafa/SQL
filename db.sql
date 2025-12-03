@@ -37,3 +37,9 @@ create table if not exists Transactions (
     accountId int ,
     constraint fk_account foreign key (accountId) references accounts(account_id) on delete cascade on update cascade
 );
+
+insert into Customers values(1,'Mostafa Lahfa','mostafa@gmail.com','0612345678','2025-12-02'),
+                            (2,'Mouad ziyani','mouad@gmail.com','0611111111','2024-11-01'),
+                            (3,'ahmed bou','ahmed@gmail.com','0622222222','2023-10-03'),
+                            (4,'med kassir','med@gmail.com','0633333333','2022-9-04'),
+                            (5,'hamza bouchikhi','hamza@gmail.com','0644444444','2021-8-05');
