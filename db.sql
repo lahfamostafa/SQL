@@ -43,3 +43,9 @@ insert into Customers values(1,'Mostafa Lahfa','mostafa@gmail.com','0612345678',
                             (3,'ahmed bou','ahmed@gmail.com','0622222222','2023-10-03'),
                             (4,'med kassir','med@gmail.com','0633333333','2022-9-04'),
                             (5,'hamza bouchikhi','hamza@gmail.com','0644444444','2021-8-05');
+
+insert into advisors values (1,'aLi','ali@gmail.com'),
+                            (2,'Ghizlaine','ghizlaine@gmail.com'),
+                            (3,'yahya','yahya@gmail.com'),
+                            (4,'abdo','abdo@gmail.com'),
+                            (5,'zakaria','zakaria@gmail.com');
