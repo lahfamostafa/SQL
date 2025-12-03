@@ -42,3 +42,12 @@ select * from Transactions where amount >= 500
 
 /*      16      */
 select * from Transactions where amount >= 100 and amount <= 1000
+
+/*      18      */
+select * from accounts order by balance asc
+
+/*      19      */
+select * from Transactions order by amount desc
+
+/*      20      */
+select * from Transactions order by amount desc limit 5
