@@ -33,3 +33,12 @@ select * from Transactions where transaction_type = 'credit'
 
 /*      12      */
 select * from Transactions where accountId = 1
+
+/*      14      */
+select * from accounts where account_type = 'Savings'
+
+/*      15      */
+select * from Transactions where amount >= 500
+
+/*      16      */
+select * from Transactions where amount >= 100 and amount <= 1000
