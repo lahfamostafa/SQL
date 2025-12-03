@@ -51,3 +51,9 @@ select * from Transactions order by amount desc
 
 /*      20      */
 select * from Transactions order by amount desc limit 5
+
+/*      21      */
+select * from Transactions order by transaction_date desc
+
+/*      22      */
+select * from Transactions order by transaction_date desc limit 3
