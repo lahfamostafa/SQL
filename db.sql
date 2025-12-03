@@ -9,3 +9,9 @@ create table if not exists Customers (
     phone varchar(10),
     registration_date date 
 );
+
+create table if not exists advisors(
+    advisor_id int primary key,
+    full_name varchar(30),
+    email varchar(30)
+);
