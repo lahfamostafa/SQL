@@ -49,3 +49,9 @@ insert into advisors values (1,'aLi','ali@gmail.com'),
                             (3,'yahya','yahya@gmail.com'),
                             (4,'abdo','abdo@gmail.com'),
                             (5,'zakaria','zakaria@gmail.com');
+
+insert into accounts values (1,101,10001.01,'Checking',1,1),
+                            (2,202,20002.02,'Savings',2,2),
+                            (3,303,30003.03,'Checking',3,3),
+                            (4,404,40004.04,'Business',4,4),
+                            (5,505,50005.05,'Savings',5,5);
