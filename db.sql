@@ -15,3 +15,15 @@ create table if not exists advisors(
     full_name varchar(30),
     email varchar(30)
 );
+
+create table if not exists accounts(
+    account_id int primary key,
+    account_number int ,
+    balance decimal(12,2),
+    account_type varchar (10),
+    constraint ck_account_type check (account_type in ('Checking','Savings','Business')),
+    customerId int,
+    advisorId int,
+    constraint fk_customer foreign key (customerId) references Customers(customer_id) on delete cascade on update cascade,
+    constraint fk_advisor foreign key (advisorId) references advisors(advisor_id) on delete cascade on update cascade
+);
