@@ -24,3 +24,12 @@ select * from accounts where balance > 10000
 
 /*      9       */
 select * from accounts where balance <= 0
+
+/*      10      */
+select * from Transactions where transaction_type = 'debit'
+
+/*      11      */
+select * from Transactions where transaction_type = 'credit'
+
+/*      12      */
+select * from Transactions where accountId = 1
