@@ -66,3 +66,15 @@ select * from Transactions order by transaction_date desc limit 3
 
 /*      23      */
 select a.account_id , c.full_name ,ad.full_name from accounts a join Customers c on a.customerId = c.customer_id join advisors ad on a.advisorId = ad.advisor_id 
+
+------  BONUS   ------
+
+/*      1       */
+select a.account_id, a.account_number, count(t.transaction_id)as total_transactions from accounts a join Transactions t on a.account_id = t.accountId group by a.account_id , a.account_number
+
+/*      2       */
+
+/*      3       */
+alter table accounts add created_at date
+
+/*      4       */
